@@ -1,12 +1,12 @@
 \section{Metodologia}
 
-\subsection{Datasets}
+\subsection{Conjunto de dados}
 
 
-Um dos datasets utilizados neste trabalho será \textit{Railway Track fault Detection Resized (224 X 224)}, disponibilizado na plataforma Kaggle por \textcite{gpiosenka_railway_2022}.
+Um dos conjuntos utilizados neste trabalho será o \textit{Railway Track fault Detection Resized (224 X 224)}, disponibilizado na plataforma Kaggle por \textcite{gpiosenka_railway_2022}.
 Trata-se de uma versão redimensionada do conjunto original \textit{Railway Track Fault Detection} disponibilizado por \textcite{hossain2021railway}, também na plataforma Kaggle.
 
-As imagens originais possuem alta resolução, o que torna o pré-processamento custoso, por esse motivo o dataset foi recriado com todas as imagens reduzidas para 244x244x3, facilitando seu uso, também foi incluido um arquivo \textit{rails.csv}, que simplifica o carregamento e a organização das amostras \cite{gpiosenka_railway_2022}.
+As imagens originais possuem alta resolução, o que torna o pré-processamento custoso, por esse motivo o dataset foi redimensionado com todas as imagens reduzidas para 244x244x3, facilitando seu uso, também foi incluido um arquivo \textit{rails.csv}, que simplifica o carregamento e a organização das amostras \cite{gpiosenka_railway_2022}.
 
 Também será utilizado o dataset \textit{Railway Track Fault Detection | Dataset2(Fastener)}, disponibilizado na plataforma Kaggle por \textcite{ashikadnan_railway_2021}.
 Porém, ao contrário do conjunto anterior, esse conjunto contém apenas imagens de pinos de fixação e não foi redimensionado.
@@ -101,7 +101,7 @@ Espera-se que os modelos desenvolvidos sejam capazes de identificar, com precis�
 De forma geral, os resultados esperados incluem:
 
 \begin{itemize}
-\item Os modelos baseados em aprendizado profundo obtenham desempenho superior aos métodos clássicos.
+\item Os modelos baseados em aprendizado profundo obtenham desempenho superior aos métodos clássicos em troca de um maior custo computacional.
 \item As arquiteturas que utilizam transferência de aprendizado apresentem resultados mais estáveis e eficientes mesmo com um conjunto de dados limitado.
 \item Os modelos devem demonstrar capacidade de generalização,  consistente mesmo diante de variações de iluminação, ângulo ou ruído.
 \item A análise comparativa identificar quais arquiteturas são mais adequadas para detecção automática de defeitos ferroviários e justificar suas vantagens técnicas.
@@ -151,4 +151,4 @@ A partir da matriz de confusão, quatro métricas amplamente utilizadas na avali
 \end{itemize}
 
 Após a obtenção dos resultados, será realizada uma comparação com os estudos presentes na literatura, analisando como os diferentes modelos se comportaram no contexto deste trabalho em relação ao desempenho observado em suas aplicações originais.
-Essa análise permitirá identificar em que medida fatores como domínio domínio dos dados, condições de captura das imagens e complexisdade das anomalias influenciam o desempenho das arquiteturas, além de evidenciar quais modelos apresentam maior capacidade de generalização para o cenário de detecção de falhas em trilhos ferroviários.
+Essa análise permitirá identificar em que medida fatores como domínio domínio dos dados, condições de captura das imagens e complexidade das anomalias influenciam o desempenho das arquiteturas, além de evidenciar quais modelos apresentam maior capacidade de generalização para o cenário de detecção de falhas em trilhos ferroviários.
